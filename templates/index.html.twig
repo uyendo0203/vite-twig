@@ -2,7 +2,10 @@
 
 {% block body %}
     <h1 class="title">{{ title }}</h1>
-    {% include "components/alert.html.twig" with {'content': 'An exemple of imported component with variable !'} %}
+    <h2 class="text-3xl font-bold underline">
+      Tailwind underline
+    </h2>
+    {% include "../components/alert.html.twig" with {'content': 'An exemple of imported component with variable !'} %}
 
     <p>Adding image</p>
     <img src="./images/test.png" alt="Test image">

@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: yellow;
+}
+.alert {
+    @apply text-[red];
+}
+.title {
+    text-decoration: underline;
+    @apply text-[2rem];
+}
