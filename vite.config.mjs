@@ -20,7 +20,6 @@ export default defineConfig({
         assetFileNames: 'styles/main.[ext]',
       },
       input: {
-        // main: '/scripts/main.js', // Chỉ định một đầu vào duy nhất
         styles: '/scripts/styles.js',
         main: '/scripts/main.js',
         home: path.resolve(__dirname, 'index.html'),
