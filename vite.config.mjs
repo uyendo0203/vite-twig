@@ -2,7 +2,7 @@ import twig from 'vite-plugin-twig'
 import { defineConfig } from "vite";
 import path from "path";
 import tailwindcss from '@tailwindcss/postcss';
-
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   css: {
@@ -29,7 +29,7 @@ export default defineConfig({
     // copyPublicDir:true
   },
   plugins: [
+    react(),
     twig(),
-    // tailwindcssVite(),
   ]
 })
