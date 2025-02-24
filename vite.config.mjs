@@ -1,16 +1,22 @@
-import twig from 'vite-plugin-twig'
-import { defineConfig } from "vite";
-import path from "path";
+import { defineConfig } from 'vite';
+import path from 'path';
+import twig from 'vite-plugin-twig';
 import tailwindcss from '@tailwindcss/postcss';
-import react from '@vitejs/plugin-react';
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
+  plugins: [
+    react(),
+    twig({
+      order: 'pre', // Thay thế 'enforce' bằng 'order'
+    }),
+  ],
   css: {
     postcss: {
       plugins: [tailwindcss],
     },
   },
-  base:'./',
+  base: './',
   build: {
     rollupOptions: {
       output: {
@@ -21,15 +27,12 @@ export default defineConfig({
       },
       input: {
         styles: '/scripts/styles.js',
-        main: '/scripts/main.js',
+        jquery: '/scripts/jquery.js',
+        react: '/react/main.jsx',
         home: path.resolve(__dirname, 'index.html'),
         about: path.resolve(__dirname, 'about.html'),
       }
     },
     // copyPublicDir:true
   },
-  plugins: [
-    react(),
-    twig(),
-  ]
 })
