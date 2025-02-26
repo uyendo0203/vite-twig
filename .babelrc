@@ -1,0 +1,4 @@
+// filepath: /Users/zen/ZenWorks/Projects/vite-twig/.babelrc
+{
+    "presets": ["@babel/preset-env", "@babel/preset-react"]
+  }

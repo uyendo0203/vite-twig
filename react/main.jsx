@@ -12,5 +12,10 @@ function App() {
   );
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+const rootElement = document.getElementById('root');
+if (rootElement) {
+  console.log(11);
+  
+  const root = ReactDOM.createRoot(rootElement);
+  root.render(<App />);
+}
