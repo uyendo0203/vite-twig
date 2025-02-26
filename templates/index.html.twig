@@ -1,17 +1,15 @@
 {% extends "base.html.twig" %}
 
 {% block body %}
-   
-
-
-    <h1 class="title">{{ title }}</h1>
-    <h2 class="text-[3rem] underline">
-      Tailwind underline
-    </h2>
-    {% include "../components/alert.html.twig" with {'content': 'An exemple of imported component with variable !'} %}
-
-    <p>Adding image</p>
-    <img src="./images/test.png" alt="Test image">
-
-    <a class="mt-4 d-block" href="/about.html">Another page</a>
+<h1 class="title">{{ title }}</h1>
+<h2 class="text-[3rem] underline">
+    Tailwind underline
+</h2>
+{% include "../components/alert.html.twig" with {'content': 'An exemple of imported component with variable !'} %}
+<p>Adding image</p>
+<img src="./images/test.png" alt="Test image">
+<div id="root"></div>
+<div>
+    <a class="mt-4 d-block" href="/about.html">About page</a>
+</div>
 {% endblock %}
