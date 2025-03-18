@@ -8,3 +8,4 @@
 
 
 # Nếu có react thì xoá "type="module" crossorigin" -> thay bằng async hoặc defer
+# Muốn thấy react run sau khi build thì vào dist, cmd 'http-server" -> sẽ chạy

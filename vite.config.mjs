@@ -30,11 +30,8 @@ export default defineConfig({
         jquery: '/scripts/jquery.js',
         react: '/react/main.jsx',
         react1: '/react/react1.jsx',
-        react2: '/react/react2.jsx',
-        "blog-ssg": '/react/blog-ssg.jsx',
         home: path.resolve(__dirname, 'index.html'),
         about: path.resolve(__dirname, 'about.html'),
-        blogSsg: path.resolve(__dirname, 'blog-ssg.html'),
       }
     },
     // copyPublicDir:true
